@@ -17,6 +17,7 @@ function numberTranslate(numInput)  {
 
   for (let i=0; i <= numInput; i++)  {
     numArray.push(i.toString());
+    
     if  (numArray[i].includes('3')) {
       numArray[i] = "Won't you be my neighbor?";
     }

@@ -18,6 +18,12 @@ Expected output: ['0','Beep!'];
 
 Describe: numberTranslate(numInput)
 
-Test:"The input 4, the array should return up to 4, then replace each number in hierarchal order. 1 will become "Beep!", 2 will become "Boop", 3 will become "Won't you be my neighbor?".
+Test:"The input 4, the array should return up to 4, then replace the numbers. 1 will become "Beep!", 2 will become "Boop", 3 will become "Won't you be my neighbor?".
 Code: numberTranslate(4);
 Expected output: ['0','Beep!','Boop!','Won't you be my neighbor?','4'];
+
+Describe: numberTranslate(numInput)
+
+Test:"The input 14, the array should return up to 14, then replace each number in hierarchal order. 1 will become "Beep!", 2 will become "Boop", 3 will become "Won't you be my neighbor?".
+Code: numberTranslate(14);
+Expected output: ['0', 'Beep!', 'Boop!', "Won't you be my neighbor?", '4', '5', '6', '7', '8', '9', 'Beep!', 'Beep!', 'Boop!', "Won't you be my neighbor?", 'Beep!']
