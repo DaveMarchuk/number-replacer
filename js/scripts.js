@@ -35,26 +35,11 @@ function numberTranslate(numInput)  {
 }
 
 // UI Logic
-function  printResults(text)  {
-  if (isEmpty())  {
-    return null;
-  }
-  const p = document.createElement("p");
-  let numArray = text.split(" ");
-
-  numArray.forEach(function(element) {
-    p.append(element);
-  });
-  return p;
-}
-
 function handleFormSubmission() {
   event.preventDefault();
   const numberInput = document.getElementById("number").value;
-  console.log(numberInput);
   const translatedInput = numberTranslate(numberInput);
-  console.log(translatedInput);
-  document.getElementById("replaced-number").innerText = translatedInput;
+  document.getElementById("output").innerText = translatedInput;
 }
 
 window.addEventListener("load", function()  {
