@@ -51,11 +51,12 @@ function  printResults(text)  {
 function handleFormSubmission() {
   event.preventDefault();
   const numberInput = document.getElementById("number").value;
+  console.log(numberInput);
   const translatedInput = numberTranslate(numberInput);
-  let printResults = printResults(translatedInput);
-  document.querySelector("div#output").append(printResults);
+  console.log(translatedInput);
+  document.getElementById("replaced-number").innerText = translatedInput;
 }
 
 window.addEventListener("load", function()  {
-  document.querySelector("form#conter-container").addEventListener("submit",handleFormSubmission);
-})
+  document.querySelector("form#number-input").addEventListener("submit",handleFormSubmission);
+});
