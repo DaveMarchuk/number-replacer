@@ -17,7 +17,7 @@ function numberTranslate(numInput)  {
 
   for (let i=0; i <= numInput; i++)  {
     numArray.push(i.toString());
-    
+
     if  (numArray[i].includes('3')) {
       numArray[i] = "Won't you be my neighbor?";
     }
@@ -35,3 +35,27 @@ function numberTranslate(numInput)  {
 }
 
 // UI Logic
+function  printResults(text)  {
+  if (isEmpty())  {
+    return null;
+  }
+  const p = document.createElement("p");
+  let numArray = text.split(" ");
+
+  numArray.forEach(function(element) {
+    p.append(element);
+  });
+  return p;
+}
+
+function handleFormSubmission() {
+  event.preventDefault();
+  const numberInput = document.getElementById("number").value;
+  const translatedInput = numberTranslate(numberInput);
+  let printResults = printResults(translatedInput);
+  document.querySelector("div#output").append(printResults);
+}
+
+window.addEventListener("load", function()  {
+  document.querySelector("form#conter-container").addEventListener("submit",handleFormSubmission);
+})
