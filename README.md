@@ -15,6 +15,7 @@
  __This website will allow the user to input a number. Then an array is created up to the number that the user created. But everytime a 1,2, or 3 is in an element of the array, the numbers get replaced with text. Every 1 will get changed to "Beep!", every 2 will get changed to "Boop!", and every 3 will get changed to "Won't you be my neighbor?". After the user presses submit, a list with up to the number the user input with the changed values will be displayed.__
 
  ## Setup/Installation Requirements
+ * _Link to GitHub page: https://davemarchuk.github.io/number-replacer/index.html_
  * _Clone this repository to your desktop._
  * _Navigate to the top level of the directory._
  * _Open number-replacer/index.html._
