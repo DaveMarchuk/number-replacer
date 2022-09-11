@@ -1,3 +1,22 @@
 body  {
   background-image: -webkit-radial-gradient(circle,orange,turquoise);
 }
+
+.content-container  {
+  width: 50%;
+  padding: 10px;
+  box-sizing: border-box;
+  text-align: start;
+}
+
+.btn  {
+  color: blanchedalmond;
+}
+
+.output-display {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 25px;
+  box-sizing: border-box;
+  margin: auto;
+}
