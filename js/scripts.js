@@ -30,7 +30,6 @@ function numberTranslate(numInput)  {
       numArray[i] = "Beep!";
     }
     }
-  
   return numArray;
 }
 
@@ -39,7 +38,7 @@ function handleFormSubmission() {
   event.preventDefault();
   const numberInput = document.getElementById("number").value;
   const translatedInput = numberTranslate(numberInput);
-  document.getElementById("output").innerText = translatedInput;
+  document.getElementById("output").innerHTML = translatedInput.join('<br/>');
 }
 
 window.addEventListener("load", function()  {
